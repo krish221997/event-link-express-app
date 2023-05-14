@@ -29,6 +29,6 @@ app.post("/create-link-token", async (request, response) => {
   }
 });
 
-app.listen(1000, () => {
+app.listen(process.env.PORT || 1000, () => {
   console.log("Listen on the port 1000...");
 });
